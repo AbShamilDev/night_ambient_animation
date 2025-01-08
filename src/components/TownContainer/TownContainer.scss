@@ -1,0 +1,15 @@
+.townContainer {
+  display: flex;
+  align-items: end;
+  bottom: 0;
+  animation: firstPlanTownParallax linear infinite;
+}
+
+@keyframes firstPlanTownParallax {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -100%;
+  }
+}

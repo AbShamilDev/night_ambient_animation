@@ -1,0 +1,51 @@
+.moonWrapper {
+  .moon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 15px 7px 0 0 #fff77e;
+    animation: moonFlying 500s linear infinite;
+  }
+}
+
+@keyframes moonFlying {
+  from {
+    top: 50px;
+    left: 90%;
+  }
+  10% {
+    top: 40px;
+  }
+  20% {
+    top: 30px;
+  }
+  30% {
+    top: 20px;
+  }
+  40% {
+    top: 10px;
+  }
+  50% {
+    top: 0;
+  }
+  60% {
+    top: 10px;
+  }
+  70% {
+    top: 20px;
+  }
+  80% {
+    top: 30px;
+  }
+  90% {
+    top: 40px;
+  }
+  to {
+    top: 50px;
+
+    left: 100px;
+  }
+}

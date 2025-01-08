@@ -1,0 +1,23 @@
+.star {
+  position: absolute;
+  width: 0.5px;
+  height: 0.5px;
+  background: #fff;
+  border-radius: 50%;
+  animation: shine infinite linear;
+}
+
+@keyframes shine {
+  from {
+    box-shadow: 0 0 0 0 #ffffff83;
+  }
+  95% {
+    box-shadow: 0 0 0 0 #ffffff83;
+  }
+  97.5% {
+    box-shadow: 0 0 1px 1.5px #ffffff83;
+  }
+  to {
+    box-shadow: 0 0 0 0 #ffffff83;
+  }
+}
