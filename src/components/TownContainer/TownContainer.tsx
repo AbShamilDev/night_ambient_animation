@@ -1,16 +1,7 @@
 import BlackBuilding from "../BlackBuilding/BlackBuilding";
 import "./TownContainer.scss";
-import {
-  getRandomInt,
-  getRandomIntWithRound,
-} from "../../../shared/getRandomInt/getRandomInt";
+import { getRandomIntWithRound } from "../../../shared/getRandomInt/getRandomInt";
 import { ReactElement, useEffect, useState } from "react";
-
-interface IBuildingInfo {
-  width: number;
-  height: number;
-  windows: { top: number; left: number }[];
-}
 
 interface Props {
   color?: string;
@@ -45,8 +36,9 @@ const TownContainer = ({
       setBuildingsInfo(
         Array(buildingsNumber)
           .fill("")
-          .map((el, i) => {
+          .map((_, i) => {
             const height = getRandomIntWithRound(minHeigth, maxHeight, 10);
+
             return (
               <BlackBuilding
                 key={`firstPlanBuilding_${i}`}

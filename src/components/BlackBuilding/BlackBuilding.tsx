@@ -1,5 +1,3 @@
-import { HTMLAttributes, useState } from "react";
-
 interface Props {
   width: number;
   height: number;
